@@ -30,7 +30,7 @@ export default async function BookDetailPage({
   }
 
   return (
-    <main className="mx-auto max-w-4xl px-6 py-12">
+    <main className="mx-auto w-full max-w-5xl px-6 py-12">
       <Link
         href="/"
         className="text-sm font-medium text-indigo-600 hover:text-indigo-500 dark:text-indigo-400"
