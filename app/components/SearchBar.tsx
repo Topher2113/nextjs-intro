@@ -1,11 +1,5 @@
-// A presentational search input.
-// It holds no state of its own — the parent owns `value` and tells us how to
-// update it through the `onChange` event-handler prop. This is a "controlled
-// component": https://react.dev/learn/sharing-state-between-components
-
 type SearchBarProps = {
   value: string;
-  // Event-handler prop: the parent decides what happens when the text changes.
   onChange: (next: string) => void;
 };
 
@@ -14,7 +8,6 @@ export default function SearchBar({ value, onChange }: SearchBarProps) {
     <input
       type="search"
       value={value}
-      // Read the new text out of the DOM event and hand it up to the parent.
       onChange={(event) => onChange(event.target.value)}
       placeholder="Search by title…"
       aria-label="Search series by title"

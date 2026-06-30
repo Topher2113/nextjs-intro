@@ -1,17 +1,10 @@
-// Data for the LitRPG Library. Each entry is one favorite book series.
-// This is a plain TypeScript module imported by Server Components.
-
 export type Book = {
-  /** URL-safe id used for the /books/[slug] route */
   slug: string;
   title: string;
   author: string;
-  /** Short one-liner shown in the "quick look" panel on the list page */
   tagline: string;
   genre: string;
-  /** Longer series blurb shown on the detail page */
   description: string;
-  /** Path to a cover image in /public */
   cover: string;
 };
 
